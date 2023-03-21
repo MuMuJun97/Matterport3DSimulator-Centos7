@@ -12,6 +12,7 @@ python 3.8
 
 ### 1. env setting
 ```shell
+git clone https://github.com/MuMuJun97/Matterport3DSimulator-Centos7.git
 cd Matterport3DSimulator-Centos7_DIF/
 export MPDIR=$(pwd)
 
@@ -29,7 +30,13 @@ mkdir build && cd build
 cmake ..
 make -j 10
 
-# test demo
+# test 1
 python $MPDIR/demo.py 
 >>> TEST MatterSim SUCCESS # build OK
+
+# test 2
+cd $MPDIR/build
+$ python
+>>> import MatterSim
+>>> print(MatterSim.__file__) # print OK
 ```
