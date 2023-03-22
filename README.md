@@ -6,12 +6,15 @@
 ```shell
 gcc (GCC) 5.4.0
 python 3.8
+cmake >= 3.16
 ```
 
 ## Installation
 
 ### 1. env setting
 ```shell
+pip install cmake==3.16.3 or conda install cmake
+
 git clone https://github.com/MuMuJun97/Matterport3DSimulator-Centos7.git
 cd Matterport3DSimulator-Centos7_DIF/
 export MPDIR=$(pwd)
